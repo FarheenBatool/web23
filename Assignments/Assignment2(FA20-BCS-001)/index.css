@@ -9,7 +9,11 @@
     height: 34px;
     padding-top: 8px;
 }
+
 .del{
+    color: white;
+}
+a{
     color: white;
 }
 .del1{

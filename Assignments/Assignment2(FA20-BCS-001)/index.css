@@ -1,0 +1,72 @@
+
+.delivery{
+    display: flex;
+    width: 100%;
+    background-color: #bea571;
+    border: 1px solid #bea571;
+    align-items: center;
+    justify-content: center;
+    height: 34px;
+    padding-top: 8px;
+}
+.del{
+    color: white;
+}
+.del1{
+    color: black;
+    font-size: large;
+    font-weight: 600;
+}
+li ion-icon{
+    align-items: center;
+    justify-content: center;
+    margin: 0px 20px;
+}
+.shop{
+    display: flex;
+    margin-left: 320px;
+    
+}
+
+.nav-link1{
+    width: 110px;
+    justify-content: center;
+    display: flex;
+}
+.carousel1 {
+    height: 500px;
+    width: 1400px;
+  }
+.carousel1 img{
+    width: 100%;
+    height: 90vh;
+    
+}
+/* #welcome{
+    margin-top: -20px;
+    background-color: green;
+} */
+.card{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.cardContainer{
+    background-image: url("/images/pexels-photo-pendaant.jpeg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 270px; 
+    width: 240px; 
+}
+.textdiv{
+    border: 1px solid #bea571;
+    background-color: #bea571;
+    border-radius: 40%;
+    padding-top: 40px;
+}
+.text{
+    color: white;
+    border: 1px solid #bea571;
+    background-color: #bea571;
+    border-radius: 40%;
+    
+}

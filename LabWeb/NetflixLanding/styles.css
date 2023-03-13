@@ -1,0 +1,16 @@
+body{
+    
+}
+#pic{
+    background-image :url('https://raw.githubusercontent.com/thatanjan/netflix-clone-yt/youtube/media//banner.jpg');
+    background-size: cover;
+    filter: blur(5px);
+    height: 100vh;
+    width: 100vw;
+}
+h1{
+    color: white;
+    top: 20px;
+    align-items: center;
+
+}

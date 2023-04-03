@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="ajax.js"></script>
+    <link rel="stylesheet" href="light.css">
+</head>
+<body>
+    <form id="myForm" action="https://usman-fake-api.herokuapp.com/api/recipes" method="get">
+        <label for="title">Title:</label>
+        <input type="text" name="title" id="title">
+        
+        <label for="body">Body:</label>
+        <textarea name="body" id="body"></textarea>
+        
+        <button id="btn" type="submit">Submit</button>
+      </form>
+
+      <div id="recipes">
+        Loading...
+      </div>
+      
+      
+    
+</body>
+</html>

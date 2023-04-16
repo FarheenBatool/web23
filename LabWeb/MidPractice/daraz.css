@@ -1,0 +1,51 @@
+.grey{
+    background-color: #eeeee4;
+    border: 2px solid #eeeee4;
+    height: 4px;
+    
+}
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    background-color: grey;
+}
+
+.menu li {
+    margin-right: 10px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.menu a.active {
+    color: orange;
+}
+
+.menu a:hover {
+    color: orange;
+    border-bottom: 3px solid orange;
+}
+
+.drz {
+    margin-top: 44px;
+    display: flex;
+    height: 70px;
+}
+
+.card {
+        width: 14rem;
+        margin-right: 4px;
+        transition: transform 0.2s ease-in-out;
+    }
+
+.card:hover {
+        transform: scale(1.05);
+    }
+

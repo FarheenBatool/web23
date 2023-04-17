@@ -1,0 +1,49 @@
+.delivery {
+    background-color: #F8dfea;
+    position: relative;
+    height: 40px; /* adjust height as needed */
+    overflow: hidden;
+}
+.delivery-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    opacity: 0;
+    animation: fade-in 4s ease-in-out infinite;
+}
+.delivery-text p {
+    margin: 0; /* remove margin for the paragraphs */
+}
+@keyframes fade-in {
+    
+      100% {
+        opacity: 1;
+    }
+}
+.footer {
+    background-color: #f8f8f8;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .column {
+    flex-basis: 30%;
+}
+
+.footer h4 {
+    margin-top: 0;
+}
+
+.footer p {
+    margin-bottom: 0;
+}
+
+

@@ -1,124 +1,30 @@
-
-        /* Custom CSS styles here */
-        /* Hero Section */
-        .hero-image {
-            background-image: url('hero.jpg');
-            background-size: cover;
-            background-position: center;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: #fff;
-        }
-
-        .hero-image h1 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-        }
-
-        .hero-image p {
-            font-size: 1.5rem;
-            margin-bottom: 2rem;
-        }
-
-        /* About Section */
-        .about-container {
-            padding: 4rem 0;
-            background-color: #f8f9fa;
-        }
-
-        .about-container h2 {
-            font-size: 2.5rem;
-            margin-bottom: 2rem;
-        }
-
-        .about-container p {
-            font-size: 1.2rem;
-            line-height: 1.6;
-        }
-
-        /* Products Section */
-        .products-container {
-            padding: 4rem 0;
-        }
-
-        .products-container .card {
-            border: none;
-            transition: transform 0.3s;
-        }
-
-        .products-container .card:hover {
-            transform: translateY(-5px);
-        }
-
-        .products-container .card-img-top {
-            height: 200px;
-            object-fit: cover;
-        }
-
-        .products-container .card-title {
-            font-size: 1.5rem;
-            margin-bottom: 1rem;
-        }
-
-        .products-container .card-text {
-            font-size: 1rem;
-            margin-bottom: 1rem;
-        }
-
-        /* Contact Section */
-        .contact-container {
-            padding: 4rem 0;
-            background-color: #f8f9fa;
-        }
-
-        .contact-container h2 {
-            font-size: 2.5rem;
-            margin-bottom: 2rem;
-        }
-
-        .contact-container p {
-            font-size: 1.2rem;
-            line-height: 1.6;
-        }
-
-        .contact-container form {
-            margin-top: 2rem;
-        }
-
-        .contact-container form input,
-        .contact-container form textarea {
-            margin-bottom: 1rem;
-        }
-
-        .contact-container form input[type="submit"] {
-            padding: 0.5rem 1.5rem;
-            background-color: #007bff;
-            color: #fff;
-            border: none;
-            cursor: pointer;
-        }
-
-        .contact-container form input[type="submit"]:hover {
-            background-color: #0056b3;
-        }
-
-        /* Footer Section */
-        .footer-container {
-            padding: 2rem 0;
-            background-color: #f8f9fa;
-        }
-
-        .footer-container p {
-            margin-bottom: 0;
-        }
-    </style>
-</head>
-
-<body>
-    <!-- Header -->
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#home">Glitzy Blings</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse"
+.carousel {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .carousel-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .card {
+    flex: 0 0 300px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .card img {
+    max-width: 100%;
+  }
+  
+  /* Optional styling for card content */
+  .card h3 {
+    margin-top: 10px;
+  }
+  
+  .card p {
+    margin-top: 5px;
+    color: #888;
+  }
+  

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Responsive Divs Example</title>
+  <style>
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .box {
+      width: 50%;
+      height: 200px;
+      border: 1px solid black;
+      box-sizing: border-box;
+      padding: 20px;
+    }
+
+    @media screen and (max-width: 400px) {
+      .box {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box">
+      <h2>Div 1</h2>
+      <p>This is the first div.</p>
+    </div>
+    <div class="box">
+      <h2>Div 2</h2>
+      <p>This is the second div.</p>
+    </div>
+  </div>
+</body>
+</html>

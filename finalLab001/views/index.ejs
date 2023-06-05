@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/mycss.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="basic">
+        <h2>FA20-BCS-001</h2>
+        <h2>Farheen Batool</h2>
+    </div>
+    
+    <div><span><h4>Data From DataBase:</h4></span></div>
+
+
+    <% comments.forEach((comment) => { %>
+        <div class="comment-box">
+          <h3>Author: <%= comment.author %></h3>
+          <p>Content: <%= comment.content %></p>
+          <p>Liked: <%= comment.liked %></p>
+          <form action="/delete" method="POST">
+            <input type="hidden" name="commentId" value="<%= comment._id %>">
+            <button class="btn btn-danger" type="submit">Delete</button>
+          </form>
+        </div>
+      <% }) %>
+      
+  
+      <div class="badd">
+        <a class="btn btn-primary"  href="/add">Add</a>
+      </div>
+      
+          
+</body>
+</html>
+

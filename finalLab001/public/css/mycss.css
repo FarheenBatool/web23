@@ -1,0 +1,27 @@
+.comment-box {
+    border: 4px dashed plum;
+    padding: 10px;
+    margin-bottom: 10px;
+    position: relative;
+  }
+  
+  .comment-box .btn-danger {
+    position: absolute;
+    top: 50px;
+    right: 5px;
+  }
+  .basic{
+    border: 2px solid black;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  .badd{
+    display: flex;
+    justify-content: center;
+  }
+  .badd .btn-primary {
+    margin-top: 10px; 
+    width: 200px; 
+    height: 50px;
+     margin-bottom: 10px;
+  }

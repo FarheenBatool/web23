@@ -74,3 +74,48 @@ li ion-icon{
     border-radius: 40%;
     
 }
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content {
+    width: 400px;
+    padding: 20px;
+  }
+  
+  .edit-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+  }
+  
+  input[type="text"],
+  input[type="number"] {
+    width: 100%;
+    padding: 8px;
+  }
+  
+  button[type="submit"] {
+    background-color: #bea571;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  button[type="button"] {
+    background-color: #bea571;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+  }

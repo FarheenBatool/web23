@@ -17,7 +17,9 @@
 module.exports = function(req, res, next) {
     res.locals.user = req.session.user;
     res.locals.flash = req.session.flash;
-    res.locals.isAdmin= false;
+    if(!req.session.user || !req.session.user.role){
+      res.locals.isAdmin= false;
+    }
     if (req.session.user && req.session.user.role) { // Add a check for req.session.user.role
       let role = req.session.user.role;
       let admin = role.find((r) => r == "admin");

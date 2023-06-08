@@ -44,45 +44,21 @@
           <p class="del1">Feautured Product</p>
         </div>
         <div class="row">
+          <% records.forEach((record) => { %>
+            <div class="card col-3" style="width: 18rem;">
+              <div class="card-body">     
+                <img class="card-img-top" src="data:image/png;base64,<%= record.image %>" alt="...">
+                <h5 class="card-title"><%= record.name %></h5>
+                <p class="card-text">Price: <%= record.price %> </p>
+                <a href="/add-to-cart/:id" class="btn btn-primary" style="background-color:#bea571; border: #bea571; color: white;">Add to Cart</a>
+              </div>
+            </div>
+          <% }); %>
 
-          <div class="card col-3" style="width: 18rem;">
-            <img src="\images\pexels-photo-bracelet.webp" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Bracelet</h5>
-              <p class="card-text">High quality zircon availble at budget friendly cost Price:2k</p>
-              <a href="#" class="btn btn-primary">Buy Now</a>
-            </div>
-          </div>
-          <div class="card col-3" style="width: 18rem;">
-            <img src="\images\pexels-photo-bracelet.webp" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Bracelet</h5>
-              <p class="card-text">High quality zircon availble at budget friendly cost Price:2k</p>
-              <a href="#" class="btn btn-primary">Buy Now</a>
-            </div>
-            
-            
-          </div>
-          <div class="card col-3" style="width: 18rem;">
-            <img src="\images\pexels-photo-bracelet.webp" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Bracelet</h5>
-              <p class="card-text">High quality zircon availble at budget friendly cost. Price:2k</p>
-              <a href="#" class="btn btn-primary">Buy Now</a>
-            </div>
-            
-            
-          </div>
-          <div class="card col-3" style="width: 18rem;">
-            <img src="\images\pexels-photo-bracelet.webp" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Bracelet</h5>
-              <p class="card-text">High quality zircon availble at budget friendly cost.Price:2k</p>
-              <a href="#" class="btn btn-primary">Buy Now</a>
-            </div>
-            
-            
-          </div>
+          <div class="text-center mt-3">
+            <a href="/shop" style="color: black;">SHOW MORE</a>
+        </div>
+
         </div>
         
        

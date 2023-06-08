@@ -1,0 +1,27 @@
+<h4>Cart</h4>
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th>Item</th>
+            <th>Price</th>
+            <th>Image</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% for(let index = 0; index < jewels.length; index++) { %>
+            <tr>
+                <td><%= jewels[index].name %></td>
+                <td><%= jewels[index].price %></td>
+                <td><img class="card-img-top" src="data:image/png;base64,<%= jewels[index].image %>" alt="..."></td>
+                <td><a href="/remove-from-cart/<%= jewels[index]._id %>" class="btn btn-danger">Remove</a></td>
+            </tr>
+        <% } %>
+    </tbody>
+    <tfoot>
+        <tr>
+            <th>Total</th>
+            <th><%= total %></th>
+        </tr>
+    </tfoot>
+</table>

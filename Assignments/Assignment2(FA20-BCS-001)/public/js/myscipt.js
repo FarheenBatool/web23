@@ -1,1 +1,1 @@
-console.log("hello from myscipt.js")
+console.log("Hello from JS")

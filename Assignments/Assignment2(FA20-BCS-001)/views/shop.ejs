@@ -3,7 +3,7 @@
 <div class="container">
     <div class="row">
       <% records.forEach((record) => { %>
-        <div class="card col-3" style="width: 18rem;">
+        <div class="card col-3 product" style="width: 18rem;">
           <img src="data:image/png;base64,<%= record.image %>" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title"><%= record.name %></h5>
@@ -11,7 +11,7 @@
             <a href="/add-to-cart/:id" class="btn btn-primary" style="background-color: #e094bf; border-color: #e094bf;">Add to Cart</a>
           </div>
         </div>
-      <% }); console.log("ok"); %>
+      <% }); %>
     </div>
   </div>
   

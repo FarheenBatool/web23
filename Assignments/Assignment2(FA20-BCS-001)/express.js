@@ -3,8 +3,9 @@ const server = express();
 //const path = require("path");
 const mongoose = require("mongoose");
 var expressLayout = require("express-ejs-layouts");
-var cookieParser = require("cookie-parser");
+
 const session = require("express-session")
+var cookieParser = require("cookie-parser");
 const bodyParser = require("body-parser");
 server.use(express.json());
 server.use(express.urlencoded(({ extended: true })))

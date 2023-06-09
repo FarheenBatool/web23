@@ -32,11 +32,6 @@ li ion-icon{
     
 }
 
-.nav-link1{
-    width: 110px;
-    justify-content: center;
-    display: flex;
-}
 .carousel1 {
     height: 500px;
     width: 1400px;
@@ -50,6 +45,34 @@ li ion-icon{
     margin-top: -20px;
     background-color: green;
 } */
+
+
+
+.product{
+  margin: 20px;
+}
+.product1{
+  margin: 20px;
+  width: 300px;
+  height: 300px;
+}
+
+
+.lower{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.proClass{
+  display: flex;
+  width: 80%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  
+
+}
 .card{
     margin-bottom: 20px;
     margin-top: 20px;

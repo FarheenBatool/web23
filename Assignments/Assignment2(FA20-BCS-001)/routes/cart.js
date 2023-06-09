@@ -4,14 +4,24 @@ let Jewel = require("../models/Jewel");
 
 router.get("/cart", async (req, res) => {
     let cart = req.cookies["cart"];
+    let jewels;
+    console.log(cart)
     if (!cart) cart = [];
-    let jewels = await Jewel.find({ _id: { $in: cart } });
+    try {
+      jewels = await Jewel.find({ _id: { $in: cart } });
+      console.log(jewels)
+    } catch (error) {
+      console.log(error)
+    }
+    
     console.log("Hi from /cart jewels finding route")
+    
     let total = 0;
     for (let index = 0; index < jewels.length; index++) {
       total += jewels[index].price;
     }
-    return res.render("cart", { jewels, total });
+    
+    return res.render("cart", { jewels:jewels, total });
   });
   router.get("/remove-from-cart/:id", (req, res) => {
     let cart = req.cookies["cart"];

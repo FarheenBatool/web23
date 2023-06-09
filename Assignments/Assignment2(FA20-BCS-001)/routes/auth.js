@@ -90,9 +90,6 @@ router.get("/adminProfile", admin, async (req, res, next) => {
   })
 });
 
-router.get("/cart",async (req, res, next) => {
-  res.render("cart");
-});
 
 router.get("/edit/:id", async function (req, res) {
   const recordId = req.params.id;

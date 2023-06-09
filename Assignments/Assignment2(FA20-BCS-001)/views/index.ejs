@@ -43,23 +43,26 @@
         <div class="delivery">
           <p class="del1">Feautured Product</p>
         </div>
-        <div class="row">
+        <div class="lower">
+          <div class="proClass">
           <% records.forEach((record) => { %>
-            <div class="card col-3" style="width: 18rem;">
+            <div class="card col-3 product">
               <div class="card-body">     
                 <img class="card-img-top" src="data:image/png;base64,<%= record.image %>" alt="...">
                 <h5 class="card-title"><%= record.name %></h5>
                 <p class="card-text">Price: <%= record.price %> </p>
-                <a href="/add-to-cart/:id" class="btn btn-primary" style="background-color:#bea571; border: #bea571; color: white;">Add to Cart</a>
+                <a href="/add-to-cart/<%= record._id %>" class="btn btn-primary" style="background-color:#bea571; border: #bea571; color: white;">Add to Cart</a>
               </div>
             </div>
           <% }); %>
-
-          <div class="text-center mt-3">
-            <a href="/shop" style="color: black;">SHOW MORE</a>
         </div>
 
+        
+
         </div>
+        <div class="text-center mt-3">
+          <a href="/shop" style="color: black;">SHOW MORE</a>
+      </div>
         
        
     </div>

@@ -13,7 +13,7 @@
             <tr>
                 <td><%= jewels[index].name %></td>
                 <td><%= jewels[index].price %></td>
-                <td><img class="card-img-top" src="data:image/png;base64,<%= jewels[index].image %>" alt="..."></td>
+                <td><img class="card-img-top" style="width: 100px;" src="data:image/png;base64,<%= jewels[index].image %>" alt="..."></td>
                 <td><a href="/remove-from-cart/<%= jewels[index]._id %>" class="btn btn-danger">Remove</a></td>
             </tr>
         <% } %>
@@ -22,6 +22,12 @@
         <tr>
             <th>Total</th>
             <th><%= total %></th>
+            <% if (total == 0) { %>
+                <th><button class="btn btn-primary" disabled>Check Out</button></th>
+              <% } else { %>
+                <th><a href="/checkout" class="btn btn-primary">Check Out</a></th>
+              <% } %>
+              
         </tr>
     </tfoot>
 </table>

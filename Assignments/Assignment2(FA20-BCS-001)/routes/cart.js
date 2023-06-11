@@ -9,7 +9,7 @@ router.get("/cart", async (req, res) => {
     if (!cart) cart = [];
     try {
       jewels = await Jewel.find({ _id: { $in: cart } });
-      console.log(jewels)
+      //console.log(jewels)
     } catch (error) {
       console.log(error)
     }
@@ -26,7 +26,7 @@ router.get("/cart", async (req, res) => {
   router.get("/remove-from-cart/:id", (req, res) => {
     let cart = req.cookies["cart"];
     if (!cart) cart = [];
-    let index = cart.find((c) => c == req.params.id);
+    let index = cart.findIndex((c) => c == req.params.id);
     cart.splice(index, 1);
   
     res.cookie("cart", cart);
@@ -40,5 +40,10 @@ router.get("/cart", async (req, res) => {
     console.log("Hi from add to cart route cart.js")
     return res.redirect("back");
   });
+  router.get("/checkout",(req,res)=> {
+    res.clearCookie("cart");
+    res.render("checkout",{ orderPlaced: true })
+  
+  })
   
   module.exports = router;

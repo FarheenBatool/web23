@@ -11,8 +11,12 @@ function App() {
    function addList(){
     setList((prevlist)=> [...prevlist,todo])
     setTodo('')
-
+    console.log(list)
     }
+    const updateList = (newList) => {
+      setList(newList);
+    };
+  
    
    
 
@@ -54,7 +58,7 @@ function App() {
   {/* <div>My name is {name}</div>
   <div>Rerender {countRef.current}</div> */}
   <button onClick={addList}>Add</button>
-  <List list = {list}/>
+  <List list = {list} updateList={updateList}/>
 
   </>
   );

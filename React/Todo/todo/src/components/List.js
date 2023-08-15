@@ -2,18 +2,30 @@ import React, { useState,useEffect } from 'react';
 
 export default function List(props) {
   // const { list } = props.List;
+  // console.log(props.list)
+  const array = props.list
+  console.log(array)
   const [updatelist , setUpdatelist]= useState(props.list) 
-  console.log(updatelist)
-  function done(){
+  console.log("hi",updatelist)
+  useEffect(() => {
+    setUpdatelist(props.list);
+  }, [props.list]);
+   function done(){
 
   }
-  function del(index){
-  const newList = updatelist.filter((item, i) => i !== index);
-  setUpdatelist(newList)
-  // console.log(newList); // Updated list without the deleted item
-  // console.log(updatelist)
-  }
+  
+  function del(index) {
+    const newList = updatelist.filter((_, i) => i !== index);
+    setUpdatelist(newList);
+    props.updateList(newList);
 
+  }
+  //  useEffect(() => {
+  //   if (props.list.length === 0) {
+  //     setUpdatelist([]);
+  //   }
+  // }, [props.list]);
+  
   return (
     <ul>
       {updatelist.map((item, index) => (
